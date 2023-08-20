@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c83b7f6-8d05-47bb-aeff-d8be2a0b3337" name="Changes" comment="Added dao interface">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1c83b7f6-8d05-47bb-aeff-d8be2a0b3337" name="Changes" comment="Added classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/CourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/HistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/ProfessorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/StudentDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -47,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692552190404</updated>
-      <workItem from="1692552192129" duration="1756000" />
+      <workItem from="1692552192129" duration="2154000" />
     </task>
     <task id="LOCAL-00001" summary="Added dao interface">
       <created>1692552696519</created>
@@ -56,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692552696519</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added classes">
+      <created>1692554155034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692554155034</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added dao interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dao interface" />
+    <MESSAGE value="Added classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added classes" />
   </component>
 </project>
