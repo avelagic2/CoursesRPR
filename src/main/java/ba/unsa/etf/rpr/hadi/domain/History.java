@@ -1,6 +1,5 @@
 package ba.unsa.etf.rpr.hadi.domain;
 
-import java.util.Date;
 import java.util.Objects;
 
 /**
@@ -12,17 +11,15 @@ public class History {
     private Student student;
     private Professor professor;
     private String thesis;
-    private Date date;
 
     public History() {}
 
-    public History(int id, Student student, Professor professor, String thesis, Date date) {
+    public History(int id, Student student, Professor professor, String thesis) {
         this.id = id;
         this.student = student;
         this.professor = professor;
         this.thesis = thesis;
-        this.date = date;
-    }
+            }
 
     public int getId() {
         return id;
@@ -56,13 +53,6 @@ public class History {
         this.thesis = thesis;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     @Override
     public String toString() {
@@ -71,7 +61,6 @@ public class History {
                 ", student=" + student +
                 ", professor=" + professor +
                 ", thesis='" + thesis + '\'' +
-                ", date=" + date +
                 '}';
     }
 
@@ -86,11 +75,11 @@ public class History {
         History history = (History) o;
         return id == history.id && student.equals(history.student) &&
                 professor.equals(history.professor) &&
-                thesis.equals(history.thesis) && date.equals(history.date);
+                thesis.equals(history.thesis);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, student, professor, thesis, date);
+        return Objects.hash(id, student, professor, thesis);
     }
 }
