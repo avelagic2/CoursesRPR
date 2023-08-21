@@ -9,15 +9,13 @@ import java.util.Objects;
 public class Professor {
     private int id;
     private String name;
-    private Date workBeginning;
     private Course course;
 
     public Professor() {}
 
-    public Professor(int id, String name, Date workBeginning, Course course) {
+    public Professor(int id, String name, Course course) {
         this.id = id;
         this.name = name;
-        this.workBeginning = workBeginning;
         this.course = course;
     }
 
@@ -37,14 +35,6 @@ public class Professor {
         this.name = name;
     }
 
-    public Date getWorkBeginning() {
-        return workBeginning;
-    }
-
-    public void setWorkBeginning(Date workBeginning) {
-        this.workBeginning = workBeginning;
-    }
-
     public Course getCourse() {
         return course;
     }
@@ -58,7 +48,6 @@ public class Professor {
         return "Professor{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", WorkBeginning=" + workBeginning +
                 ", course=" + course +
                 '}';
     }
@@ -69,13 +58,12 @@ public class Professor {
         if(obj == null || getClass() != obj.getClass()) return false;
         Professor professor = (Professor) obj;
         return id == professor.id && name.equals(professor.name) &&
-                Objects.equals(workBeginning, professor.workBeginning) &&
                 course.equals(professor.course);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, workBeginning, course);
+        return Objects.hash(id, name, course);
     }
 
 }
