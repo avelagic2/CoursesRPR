@@ -13,7 +13,7 @@ public class DateBaseDao {
 
     public static Connection getInstance() throws SQLException {
         if(connection == null){
-            connection = DriverManager.getConnection("","","");
+            connection = DriverManager.getConnection("", "", "");
         }
         return connection;
     }

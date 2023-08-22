@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c83b7f6-8d05-47bb-aeff-d8be2a0b3337" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/CourseDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/CourseDaoSQLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/DateBaseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/StudentDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/StudentDaoSQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/DateBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/DateBaseDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <updated>1692552190404</updated>
       <workItem from="1692552192129" duration="8030000" />
       <workItem from="1692606629801" duration="6228000" />
-      <workItem from="1692632156061" duration="12482000" />
+      <workItem from="1692632156061" duration="13643000" />
     </task>
     <task id="LOCAL-00001" summary="Added dao interface">
       <created>1692552696519</created>
@@ -186,7 +185,35 @@
       <option name="project" value="LOCAL" />
       <updated>1692697027899</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Updated CourseDaoSQLImpl to use singleton class">
+      <created>1692698048604</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692698048604</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated CourseDaoSQLImpl to use singleton class">
+      <created>1692698063697</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1692698063697</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated StudentDaoSQLImpl to use singleton class">
+      <created>1692698081692</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1692698081692</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Updated ProfessorDaoSQLImpl to use singleton class">
+      <created>1692698101027</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692698101027</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +249,8 @@
     <MESSAGE value="Implemented some main class testings" />
     <MESSAGE value="Simple singleton design for database connection" />
     <MESSAGE value="Updated CourseDaoSQLImpl to use singleton class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated CourseDaoSQLImpl to use singleton class" />
+    <MESSAGE value="Updated StudentDaoSQLImpl to use singleton class" />
+    <MESSAGE value="Updated ProfessorDaoSQLImpl to use singleton class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated ProfessorDaoSQLImpl to use singleton class" />
   </component>
 </project>
