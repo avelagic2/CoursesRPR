@@ -39,30 +39,24 @@ public class ProfessorDaoSQLImpl implements ProfessorDao{
         return null;
     }
 
-    private int getMaxId(){
-        int id=1;
-        try {
-            PreparedStatement statement = this.connection.prepareStatement("SELECT MAX(id)+1 FROM Professors");
-            ResultSet rs = statement.executeQuery();
-            if(rs.next()) {
-                id = rs.getInt(1);
-                rs.close();
-                return id;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return id;
-    }
 
     @Override
     public Professor add(Professor item) {
-        int id = getMaxId();
-        try{
-            PreparedStatement stmt = this.connection.prepareStatement("INSERT INTO Professor VALUES (id, item.getName(), item.getCourse().getId)");
+        try {
+            PreparedStatement stmt = this.connection.prepareStatement("INSERT INTO Professors (name, courseId) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, item.getName());
+            stmt.setInt(2, item.getCourse().getId());
             stmt.executeUpdate();
-            item.setId(id);
-            return item;
+            ResultSet rs = stmt.getGeneratedKeys();
+            if(rs.next())
+            {
+                item.setId(rs.getInt(1));
+                return item;
+            }
+            else {
+                System.err.println("No generated keys returned after INSERT.");
+                throw new SQLException("Failed to retrieve generated keys.");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -73,9 +67,9 @@ public class ProfessorDaoSQLImpl implements ProfessorDao{
     public Professor update(Professor item) {
         try{
             PreparedStatement stmt = this.connection.prepareStatement("UPDATE Professors SET name=?, courseId=? WHERE id=?");
-            stmt.setInt(1,item.getId());
-            stmt.setString(2, item.getName());
-            stmt.setInt(3, item.getCourse().getId());
+            stmt.setInt(3,item.getId());
+            stmt.setString(1, item.getName());
+            stmt.setInt(2, item.getCourse().getId());
             stmt.executeUpdate();
             return item;
         } catch (SQLException e) {
@@ -117,7 +111,7 @@ public class ProfessorDaoSQLImpl implements ProfessorDao{
 
     @Override
     public List<Professor> searchByCourse(Course course) {
-        List<Professor> lists = new ArrayList<>();
+        List<Professor> professors = new ArrayList<>();
         try {
             PreparedStatement stmt = this.connection.prepareStatement("SELECT * FROM Professors WHERE courseId = ?");
             stmt.setInt(1, course.getId());
@@ -127,13 +121,13 @@ public class ProfessorDaoSQLImpl implements ProfessorDao{
                 prof.setId(rs.getInt("id"));
                 prof.setName(rs.getString("name"));
                 prof.setCourse(course);
-                lists.add(prof);
+                professors.add(prof);
             }
             rs.close();
         } catch (SQLException e) {
 
             e.printStackTrace();
         }
-        return lists;
+        return professors;
     }
 }
