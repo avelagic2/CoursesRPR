@@ -10,7 +10,8 @@ public class StudentDaoSQLImpl implements StudentDao {
 
     public StudentDaoSQLImpl(){
         try{
-            this.connection = DriverManager.getConnection("","","");
+             this.connection = DriverManager.getConnection("","","");
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -38,30 +39,17 @@ public class StudentDaoSQLImpl implements StudentDao {
         return null;
     }
 
-    private int getMaxId(){
-        int id=1;
-        try {
-            PreparedStatement statement = this.connection.prepareStatement("SELECT MAX(id)+1 FROM Students");
-            ResultSet rs = statement.executeQuery();
-            if(rs.next()) {
-                id = rs.getInt(1);
-                rs.close();
-                return id;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return id;
-    }
-
-
     @Override
     public Student add(Student item) {
-        int id = getMaxId();
         try{
-            PreparedStatement stmt =  this.connection.prepareStatement("INSERT INTO Students VALUES (id, item.getName(), item.getCode(), item.getProfessor().getId())");
+            PreparedStatement stmt = this.connection.prepareStatement( "INSERT INTO Students(name, code, professorId) VALUES(?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, item.getName());
+            stmt.setInt(2, (int)item.getCode());
+            stmt.setInt(3, item.getProfessor().getId());
             stmt.executeUpdate();
-            item.setId(id);
+            ResultSet rs = stmt.getGeneratedKeys();
+            rs.next();
+            item.setId(rs.getInt(1));
             return item;
         } catch (SQLException e) {
             e.printStackTrace();
