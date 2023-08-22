@@ -10,7 +10,7 @@ public class StudentDaoSQLImpl implements StudentDao {
 
     public StudentDaoSQLImpl(){
         try{
-             this.connection = DriverManager.getConnection("");
+            this.connection = DateBaseDao.getInstance();
 
         } catch (SQLException e) {
             e.printStackTrace();
