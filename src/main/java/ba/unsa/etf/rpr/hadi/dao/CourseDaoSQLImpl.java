@@ -1,7 +1,6 @@
 package ba.unsa.etf.rpr.hadi.dao;
 
 import ba.unsa.etf.rpr.hadi.domain.Course;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +11,7 @@ public class CourseDaoSQLImpl implements CourseDao{
 
     public CourseDaoSQLImpl(){
         try{
-            this.connection = DriverManager.getConnection("");
+            this.connection = DateBaseDao.getInstance();
         }catch(Exception e){
             e.printStackTrace();
         }
