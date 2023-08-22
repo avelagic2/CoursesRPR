@@ -12,7 +12,7 @@ public class CourseDaoSQLImpl implements CourseDao{
 
     public CourseDaoSQLImpl(){
         try{
-            this.connection = DriverManager.getConnection("","","");
+            this.connection = DriverManager.getConnection("");
         }catch(Exception e){
             e.printStackTrace();
         }
