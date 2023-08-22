@@ -11,7 +11,7 @@ public class ProfessorDaoSQLImpl implements ProfessorDao{
 
     public ProfessorDaoSQLImpl(){
         try{
-            this.connection = DriverManager.getConnection("","","");
+            this.connection = DateBaseDao.getInstance();
         } catch (SQLException e) {
             e.printStackTrace();
         }
