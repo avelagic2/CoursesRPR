@@ -58,7 +58,7 @@
       <workItem from="1692632156061" duration="15506000" />
       <workItem from="1692893494233" duration="1221000" />
       <workItem from="1693227128065" duration="26000" />
-      <workItem from="1693328734943" duration="1438000" />
+      <workItem from="1693328734943" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="Added dao interface">
       <created>1692552696519</created>
@@ -242,7 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693329828987</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Updating pom.xml with dependencies and plugins for Maven and JavaFX">
+      <created>1693330230180</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1693330230180</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Updating pom.xml with dependencies and plugins for Maven and JavaFX">
+      <created>1693330322382</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1693330322382</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +296,7 @@
     <MESSAGE value="Updated ProfessorDaoSQLImpl to use singleton class" />
     <MESSAGE value="Dao tested and verified" />
     <MESSAGE value="Updating JavaDoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating JavaDoc" />
+    <MESSAGE value="Updating pom.xml with dependencies and plugins for Maven and JavaFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating pom.xml with dependencies and plugins for Maven and JavaFX" />
   </component>
 </project>
