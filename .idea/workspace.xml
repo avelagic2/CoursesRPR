@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c83b7f6-8d05-47bb-aeff-d8be2a0b3337" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/DateBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/DateBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <workItem from="1692632156061" duration="15506000" />
       <workItem from="1692893494233" duration="1221000" />
       <workItem from="1693227128065" duration="26000" />
-      <workItem from="1693328734943" duration="349000" />
+      <workItem from="1693328734943" duration="1085000" />
     </task>
     <task id="LOCAL-00001" summary="Added dao interface">
       <created>1692552696519</created>
@@ -222,7 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692699019313</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updating JavaDoc">
+      <created>1693329098153</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1693329098153</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updating JavaDoc">
+      <created>1693329204265</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1693329204265</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +274,7 @@
     <MESSAGE value="Updated StudentDaoSQLImpl to use singleton class" />
     <MESSAGE value="Updated ProfessorDaoSQLImpl to use singleton class" />
     <MESSAGE value="Dao tested and verified" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dao tested and verified" />
+    <MESSAGE value="Updating JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating JavaDoc" />
   </component>
 </project>

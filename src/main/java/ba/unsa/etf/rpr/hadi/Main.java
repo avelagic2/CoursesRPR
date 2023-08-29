@@ -7,6 +7,9 @@ import ba.unsa.etf.rpr.hadi.domain.Professor;
 
 import java.util.List;
 
+/**
+ * Basic Main class where testing of classes and methods are done
+ */
 public class Main {
     public static void main(String[] args) {
         /*
