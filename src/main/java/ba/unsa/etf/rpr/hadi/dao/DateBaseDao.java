@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * Singleton design pattern for Database connection 
+ */
 public class DateBaseDao {
     private static Connection connection;
 
