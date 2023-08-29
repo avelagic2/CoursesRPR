@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c83b7f6-8d05-47bb-aeff-d8be2a0b3337" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <workItem from="1692632156061" duration="15506000" />
       <workItem from="1692893494233" duration="1221000" />
       <workItem from="1693227128065" duration="26000" />
-      <workItem from="1693328734943" duration="1085000" />
+      <workItem from="1693328734943" duration="1438000" />
     </task>
     <task id="LOCAL-00001" summary="Added dao interface">
       <created>1692552696519</created>
@@ -235,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693329204265</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Updating JavaDoc">
+      <created>1693329828987</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1693329828987</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
