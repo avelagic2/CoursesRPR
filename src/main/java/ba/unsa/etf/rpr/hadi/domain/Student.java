@@ -3,7 +3,7 @@ package ba.unsa.etf.rpr.hadi.domain;
 import java.util.Objects;
 
 /**
- * Basic Java Class for Students
+ * Java Bean class for Student
  */
 public class Student {
     private int id;

@@ -3,7 +3,7 @@ package ba.unsa.etf.rpr.hadi.domain;
 import java.util.Objects;
 
 /**
- * Basic Java Class for Professor
+ * Java Bean class for Professor
  */
 public class Professor {
     private int id;
