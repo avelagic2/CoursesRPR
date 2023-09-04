@@ -16,6 +16,9 @@ public class StudentDaoSQLImpl implements StudentDao {
             e.printStackTrace();
         }
     }
+
+
+
     @Override
     public Student getById(int id) {
         try{
@@ -45,6 +48,10 @@ public class StudentDaoSQLImpl implements StudentDao {
             PreparedStatement stmt = this.connection.prepareStatement( "INSERT INTO Students(name, code, professorId) VALUES(?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, item.getName());
             stmt.setInt(2, (int)item.getCode());
+            if(item.getProfessor() == null) {
+                stmt.setInt(3, 1);
+            }
+            else
             stmt.setInt(3, item.getProfessor().getId());
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
@@ -94,6 +101,7 @@ public class StudentDaoSQLImpl implements StudentDao {
                 Student student = new Student();
                 student.setId(rs.getInt("id"));
                 student.setName(rs.getString("name"));
+                student.setCode(rs.getInt("code"));
                 student.setProfessor(new ProfessorDaoSQLImpl().getById(rs.getInt("professorId")));
                 students.add(student);
             }

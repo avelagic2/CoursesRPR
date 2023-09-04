@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="studentList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.hadi.Controller">
+   <children>
+      <ListView fx:id="professorListView" layoutX="41.0" layoutY="93.0" prefHeight="245.0" prefWidth="200.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color green="0.30000001192092896" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ListView>
+      <Label alignment="CENTER" layoutX="309.0" layoutY="34.0" prefHeight="36.0" prefWidth="176.0" text="Lista studenata" textFill="#f80f0f">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="studentListView" layoutX="297.0" layoutY="93.0" prefHeight="245.0" prefWidth="200.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.859649121761322" green="0.3555338978767395" blue="0.3555338978767395" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ListView>
+      <Label layoutX="70.0" layoutY="34.0" prefHeight="36.0" prefWidth="143.0" text="Lista profesora" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="okB2" layoutX="51.0" layoutY="371.0" mnemonicParsing="false" onAction="#okA2" prefHeight="45.0" prefWidth="130.0" text="Add new professor" />
+      <Button fx:id="okB1" layoutX="309.0" layoutY="371.0" mnemonicParsing="false" onAction="#okA1" prefHeight="45.0" prefWidth="112.0" text="Add new student" />
+   </children>
+</Pane>

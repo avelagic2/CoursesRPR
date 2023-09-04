@@ -33,10 +33,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return "Course{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+        return "Kurs:" + name;
     }
 
     @Override

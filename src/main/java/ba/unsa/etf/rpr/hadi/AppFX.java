@@ -13,18 +13,18 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class AppFX extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/MainScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/studentList.fxml"));
         Parent root = fxmlLoader.load();
         Stage stage = null;
-        primaryStage.setTitle("Quote-maker");
+        primaryStage.setTitle("Import studenata iz baze");
         primaryStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         primaryStage.setResizable(false);
         primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }

@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c83b7f6-8d05-47bb-aeff-d8be2a0b3337" name="Changes" comment="">
+    <list default="true" id="1c83b7f6-8d05-47bb-aeff-d8be2a0b3337" name="Changes" comment="Added basic login window and test for login">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/AppFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/AppFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/DateBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/DateBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/StudentDaoSQLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/dao/StudentDaoSQLImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/domain/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/domain/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/domain/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/domain/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/hadi/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -37,13 +49,29 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/hadis/IdeaProjects/DijkstraHomework"
+    "last_directory_selection": "C:/Users/hadis/IdeaProjects/CoursesRPR/src/main/java/ba/unsa/etf/rpr/hadi",
+    "last_opened_file_path": "C:/Users/hadis/IdeaProjects/CoursesRPR",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ba.unsa.etf.rpr.hadi.dao" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.hadi.AppFX" />
+      <module name="CoursesRPR" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\hadis\Desktop\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,7 +86,14 @@
       <workItem from="1692632156061" duration="15506000" />
       <workItem from="1692893494233" duration="1221000" />
       <workItem from="1693227128065" duration="26000" />
-      <workItem from="1693328734943" duration="1793000" />
+      <workItem from="1693328734943" duration="10340000" />
+      <workItem from="1693339704343" duration="1325000" />
+      <workItem from="1693380194111" duration="9919000" />
+      <workItem from="1693404970366" duration="147000" />
+      <workItem from="1693429995298" duration="24000" />
+      <workItem from="1693586585955" duration="196000" />
+      <workItem from="1693764249829" duration="18000" />
+      <workItem from="1693816532638" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Added dao interface">
       <created>1692552696519</created>
@@ -256,7 +291,28 @@
       <option name="project" value="LOCAL" />
       <updated>1693330322382</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Updating pom.xml with dependencies and plugins for Maven and JavaFX">
+      <created>1693330610768</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1693330610768</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Updating pom.xml with dependencies and plugins for Maven and JavaFX">
+      <created>1693336354685</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1693336354685</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added basic login window and test for login">
+      <created>1693336396524</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1693336396524</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +353,7 @@
     <MESSAGE value="Dao tested and verified" />
     <MESSAGE value="Updating JavaDoc" />
     <MESSAGE value="Updating pom.xml with dependencies and plugins for Maven and JavaFX" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating pom.xml with dependencies and plugins for Maven and JavaFX" />
+    <MESSAGE value="Added basic login window and test for login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic login window and test for login" />
   </component>
 </project>
